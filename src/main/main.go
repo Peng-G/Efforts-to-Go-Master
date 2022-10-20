@@ -1,11 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"go_basics"
 )
 
 func main() {
-	fmt.Println("Hello, World!")
-	go_basics.Pointer()
+	go_basics.Channels()  // call different functions from go_basics package, and see what happens.
 }

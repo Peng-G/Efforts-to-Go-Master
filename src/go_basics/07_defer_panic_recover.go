@@ -22,7 +22,7 @@ func Defer_panic_recover() {
 	// panic("something bad happened")
 	// 4. panic语句会中断函数的执行，但是会执行defer语句。
 
-	// 5. recover语句，捕获异常。
+	// 5. recover语句，捕获异常，只在defer函数中有用，可以从panic中恢复函数。
 	defer func() {
 		if err := recover(); err != nil {
 			fmt.Println(err)
